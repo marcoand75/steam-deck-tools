@@ -9,8 +9,8 @@ namespace PowerControl.Options
         public const string SlowTDP = "SlowTDP";
         public const string FastTDP = "FastTDP";
 
-        public const int DefaultSlowTDP = 15000;
-        public const int DefaultFastTDP = 15000;
+        public const int DefaultSlowTDP = 10000;
+        public const int DefaultFastTDP = 10000;
 
         public static PersistedOptions UserOptions()
         {
@@ -43,7 +43,7 @@ namespace PowerControl.Options
             PersistOnCreate = false,
             OptionsValues = () => { return UserOptions().GetOptions(); },
             ApplyDelay = 1000,
-            ResetValue = () => { return "15W"; },
+            ResetValue = () => { return "10W"; },
             ActiveOption = "?",
             ApplyValue = (selected) =>
             {

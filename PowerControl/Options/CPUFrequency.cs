@@ -9,7 +9,7 @@ namespace PowerControl.Options
         public const string SoftMax = "SoftMax";
 
         public const int DefaultMin = 1400;
-        public const int DefaultMax = 3500;
+        public const int DefaultMax = 3900;
 
         public static PersistedOptions UserOptions()
         {
