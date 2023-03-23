@@ -190,6 +190,12 @@ namespace PowerControl.Helpers.AMD
             set { setValue(Message.PPSMC_MSG_SetFastPPTLimit, value, MIN_TDP, MAX_TDP); }
         }
 
+        public uint TempTDP
+        {
+            get { return getValue(Message.PPSMC_MSG_GetThermalLimit); }
+        }
+
+
         public uint GfxClock
         {
             get { return getValue(Message.PPSMC_MSG_GetGfxclkFrequency); }
