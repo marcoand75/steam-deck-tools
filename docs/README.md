@@ -96,10 +96,11 @@ So, it validates bios version. Those are currently supported:
 - F7A0107 (PD ver: 0xB030)
 - F7A0110 (PD ver: 0xB030)
 - F7A0113 (PD ver: 0xB030)
+- F7A0115 (PD ver: 0xB030)
 
 ## Author
 
-Kamil Trzciński, 2022
+Kamil Trzciński, 2022-2023
 
 Steam Deck Tools is not affiliated with Valve, Steam, or any of their partners.
 
