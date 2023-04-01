@@ -9,6 +9,7 @@
 
 ## 0.6.x
 
+- PowerControl: Show Game Profiles menu item
 - PowerControl: Improve handling of restoring DesktopProfile
 - PowerControl: Support SMU of Vangogh GPU shipped with BIOS 115
 - SteamController: Add `DS4` support (with Gyro, Accel, Trackpads and Haptics)
