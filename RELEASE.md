@@ -9,6 +9,7 @@
 
 ## 0.6.x
 
+- PowerControl: Allow to set Autostart Profile Settings
 - PowerControl: Show Game Profiles menu item
 - PowerControl: Improve handling of restoring DesktopProfile
 - PowerControl: Support SMU of Vangogh GPU shipped with BIOS 115
