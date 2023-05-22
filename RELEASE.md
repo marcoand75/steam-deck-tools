@@ -1,7 +1,4 @@
-**This project is provided free of charge, but development of it is not free - it takes a lot of effort**:
-
-- Consider donating to keep this project alive.
-- Donating also helps to fund new features.
+**Consider donating if you are happy with this project:**
 
 <a href='https://ko-fi.com/ayufan' target='_blank'><img height='35' style='border:0px;height:50px;' src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=0' alt='Buy Me a Coffee at ko-fi.com' /></a> <a href="https://www.paypal.com/donate/?hosted_button_id=DHNBE2YR9D5Y2" target='_blank'><img height='35' src="https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png" alt="Donate with PayPal" style='border:0px;height:55px;'/></a>
 
@@ -9,6 +6,10 @@
 
 ## 0.6.x
 
+- SteamController/PowerControl: Create Logs in Documents/SteamDeckTools/Logs
+- SteamController: Improve **Steam Input** support for **Steam Version 1684535786** WARNING: only English is supported!
+- SteamController: Allow to configure DS4 back buttons
+- SteamController: Allow to `EnableDS4Support=false` to hide DS4 controller
 - All: Support [unofficial APU drivers](https://sourceforge.net/projects/amernimezone/files/Release%20Polaris-Vega-Navi/AMD%20SOC%20Driver%20Variant/) that present themselves as `AMD Radeon 670M`
 - PowerControl: Show Game Profiles menu item
 - PowerControl: Support SMU of Vangogh GPU shipped with BIOS 115
