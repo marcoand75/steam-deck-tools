@@ -8,11 +8,9 @@ namespace PowerControl.Options
     {
         public const string SlowTDP = "SlowTDP";
         public const string FastTDP = "FastTDP";
-        public const string TempTDP = "TempTDP";
 
         public const int DefaultSlowTDP = 15000;
         public const int DefaultFastTDP = 15000;
-        public const int DefaultTempTDP = 92;
 
         public static PersistedOptions UserOptions()
         {
@@ -61,7 +59,6 @@ namespace PowerControl.Options
 
                 var slowTDP = selectedOption.Get(SlowTDP, DefaultSlowTDP);
                 var fastTDP = selectedOption.Get(FastTDP, DefaultFastTDP);
-                var tempTDP = selectedOption.Get(TempTDP, DefaultTempTDP);
 
                 if (VangoghGPU.IsSupported)
                 {
@@ -90,7 +87,6 @@ namespace PowerControl.Options
                                     "--stapm-limit=" + stampLimit.ToString(),
                                     "--slow-limit=" + slowTDP.ToString(),
                                     "--fast-limit=" + fastTDP.ToString(),
-                                    "--tctl-temp=" + tempTDP.ToString(),
                         },
                         WindowStyle = ProcessWindowStyle.Hidden,
                         UseShellExecute = false,

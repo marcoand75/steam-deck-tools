@@ -194,12 +194,7 @@ namespace PowerControl.Helpers.AMD
             set { setValue(Message.PPSMC_MSG_SetFastPPTLimit, value, MIN_TDP, MAX_TDP); }
         }
 
-        public uint TempTDP
-        {
-            get { return getValue(Message.PPSMC_MSG_GetThermalLimit); }
-        }
-
-
+        
         public uint GfxClock
         {
             get { return getValue(Message.PPSMC_MSG_GetGfxclkFrequency); }
@@ -210,7 +205,7 @@ namespace PowerControl.Helpers.AMD
             get { return getValue(Message.PPSMC_MSG_GetFclkFrequency); }
         }
 
-        const uint MIN_CPU_CLOCK = 1400;
+        const uint MIN_CPU_CLOCK = 1000;
         const uint MAX_CPU_CLOCK = 4000;
 
         public uint MinCPUClock
@@ -224,7 +219,7 @@ namespace PowerControl.Helpers.AMD
         }
 
         const uint MIN_GFX_CLOCK = 200;
-        const uint MAX_GFX_CLOCK = 1900;
+        const uint MAX_GFX_CLOCK = 2000;
 
         public uint HardMinGfxClock
         {
